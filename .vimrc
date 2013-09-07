@@ -20,8 +20,8 @@ nmap <ESC><ESC> :nohlsearch<CR><ESC>
 vnoremap > >gv
 vnoremap < <gv
 
-nnoremap <leader>ev :vsplit $MYVIMRC<CR>
-nnoremap <leader>sv :w<CR> :source $MYVIMRC<CR>
+nnoremap <leader>e :e $MYVIMRC<CR>
+nnoremap <leader>sv :w<CR> :source $MYVIMRC<CR> :bf<CR>
 
 """ NEOBUNDLE
 filetype off
@@ -41,10 +41,13 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'rails.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'ghcmod'
-NeoBundle 'Lokaltog/powerline'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'kana/vim-textobj-user'
+NeoBundle 'kana/vim-textobj-indent'
+NeoBundle 'glts/vim-textobj-comment'
+NeoBundle 'scrooloose/nerdtree'
 filetype plugin indent on
 NeoBundleCheck
 
