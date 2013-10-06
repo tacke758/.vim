@@ -48,6 +48,7 @@ NeoBundle 'kana/vim-textobj-user'
 NeoBundle 'kana/vim-textobj-indent'
 NeoBundle 'glts/vim-textobj-comment'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'kien/ctrlp.vim'
 filetype plugin indent on
 NeoBundleCheck
 
@@ -61,6 +62,7 @@ let g:syntastic_mode_map = {
       \ "active_filetypes" : ["javascript"],
       \}
 let g:syntastic_auto_loc_list = 1
+
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
